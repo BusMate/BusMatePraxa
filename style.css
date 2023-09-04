@@ -24,7 +24,7 @@
     height: 93px;
     align-items: center;
     justify-content: flex-end;
-    gap: 20.5px;
+    gap: 21px;
     font-size: 15px;
     color: white;
     font-weight: 700;
@@ -62,5 +62,5 @@
     display: flex;
     position: absolute;
     z-index: 1;
-    padding-left: 200px;
+    padding-left: 15%;
 }
