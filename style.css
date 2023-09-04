@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .Weboldal {
@@ -63,4 +65,35 @@
     position: absolute;
     z-index: 1;
     padding-left: 15%;
+}
+
+.Header{
+    display: flex;
+    position: relative;
+}
+
+.Header img {
+    width: 100%;
+    height: 100%;
+}
+
+.Headtext {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.300);
+    width: 300px;
+    position: absolute;
+    gap: 15px;
+}
+
+.cim{
+    font-weight: 700;
+    font-size: 38px;
+    color: white;
+}
+
+.alszoveg{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
 }
