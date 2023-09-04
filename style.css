@@ -70,6 +70,7 @@
 .Header{
     display: flex;
     position: relative;
+    align-items: center;
 }
 
 .Header img {
@@ -84,6 +85,10 @@
     width: 300px;
     position: absolute;
     gap: 15px;
+    padding-top: 67px;
+    padding-bottom: 42px;
+    padding-left: 250px;
+    padding-right: 56px;
 }
 
 .cim{
