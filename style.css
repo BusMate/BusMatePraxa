@@ -16,6 +16,28 @@
     width: 100%;
     position: relative;
     z-index: 2;
+    
+}
+
+a:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(200, 200, 200);
+    transition: 500ms;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+.local-link::before {
+  content: url('images/Vector1.png');
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
 }
 
 .piros {
@@ -27,9 +49,10 @@
     justify-content: flex-end;
     gap: 21px;
     font-size: 15px;
-    color: white;
     font-weight: 700;
     padding-right: 198px;
+    list-style: none;
+    color: white;
 }
 
 .pdf {
