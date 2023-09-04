@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Weboldal{
+display: flex;
+flex-direction: column;
+}
+
+.Navbar{
+display: flex;
+
+}
+
+.piros{
+background-color: #B50014;
+
+}
+
+.fekte{
+background-color: #252525;
+
+}
