@@ -1,24 +1,30 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.Weboldal{
-display: flex;
-flex-direction: column;
+.Weboldal {
+    display: flex;
+    flex-direction: column;
 }
 
-.Navbar{
-display: flex;
-
-}
-
-.piros{
-background-color: #B50014;
+.Navbar {
+    display: flex;
+    flex-direction: column;
 
 }
 
-.fekte{
-background-color: #252525;
+.piros {
+    display: flex;
+    flex-direction: row;
+    background-color: #B50014;
+    height: 93px;
+}
 
+.fekte {
+    display: flex;
+    flex-direction: row;
+    background-color: #252525;
+    top: 95px;
+    height: 30px;
 }
