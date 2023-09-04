@@ -11,7 +11,8 @@
 .Navbar {
     display: flex;
     flex-direction: column;
-
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 .piros {
@@ -19,12 +20,39 @@
     flex-direction: row;
     background-color: #B50014;
     height: 93px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20.5px;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    padding-right: 198px;
+
 }
 
-.fekte {
+.pdf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.Opentime{
+    font-weight: bold;
+}
+
+.fekete {
     display: flex;
     flex-direction: row;
     background-color: #252525;
     top: 95px;
     height: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 6.95px;
+    padding-right: 198px;
 }
