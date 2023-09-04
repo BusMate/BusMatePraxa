@@ -4,6 +4,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 .Weboldal {
     display: flex;
     flex-direction: column;
@@ -32,7 +36,7 @@ a {
     color: white;
 }
 
-li a{
+li a {
     display: flex;
 }
 
@@ -54,7 +58,7 @@ li a{
     height: 93px;
     align-items: center;
     justify-content: flex-end;
-    gap: 21px;
+    gap: 23px;
     font-size: 15px;
     font-weight: 700;
     padding-right: 198px;
@@ -125,5 +129,81 @@ li a{
 }
 
 .DryAged {
-    background-color: #252525;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    gap: 125px;
+    padding-bottom: 90px;
+}
+
+.Dryszoveg {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 160px;
+    width: 427px;
+    gap: 41px;
+    padding-left: 412px;
+}
+
+.drytext {
+    display: flex;
+    flex-direction: column;
+}
+
+.Drycim {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Dryalcim {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.Hosszuszoveg {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.aged {
+    border: 1.5px solid white;
+    background-color: #B50014;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    border-radius: 25px;
+    width: 174px;
+    margin-right: 16px;
+}
+
+.alte {
+    border: 1.5px solid white;
+    background-color: #B50014;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    width: 174px;
+    border-radius: 25px;
+
+}
+
+.Drykepek{
+    display: flex;
+    flex-direction: column;
+    padding-top: 114px;
+    gap: 15px;
+}
+
+.haromkep{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    width: 55.8%;
 }
