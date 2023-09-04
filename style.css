@@ -61,7 +61,7 @@ li a {
     font-size: 16px;
     font-weight: 700;
     padding-right: 298px;
-    padding-left: 518px;
+    padding-left: 515.5px;
     list-style: none;
     color: white;
 }
@@ -206,4 +206,19 @@ li a {
     flex-direction: row;
     gap: 17px;
     width: 55.8%;
+}
+
+.Buchen{
+    background-color: #B50014;
+    color: white;
+}
+
+.buchenszoveg{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.buchenalszoveg{
+    font-size: 16px;
+    font-weight: 300;
 }
