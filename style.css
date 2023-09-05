@@ -229,6 +229,7 @@ li a {
 .buchenszoveg {
     font-size: 32px;
     font-weight: 700;
+    padding-bottom: 8px;
 }
 
 .alszoveg li {
@@ -313,10 +314,11 @@ hr {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+   
 }
 
-.spicekep{
+.spicekep img{
     width: 100%;
     height: 100%;
     object-fit: cover; 
@@ -325,5 +327,5 @@ hr {
 .spicetext{
     display: flex;
     flex-direction: column ;
-    width: 431px;
+    width: 601px;
 }
