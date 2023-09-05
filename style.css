@@ -54,13 +54,12 @@ li a {
     display: flex;
     flex-direction: row;
     background-color: #B50014;
+    justify-content: flex-end;
     height: 93px;
     align-items: center;
     gap: 41px;
     font-size: 16px;
     font-weight: 700;
-    padding-right: 298px;
-    padding-left: 515.5px;
     list-style: none;
     color: white;
 }
@@ -73,22 +72,20 @@ li a {
     display: flex;
     flex-direction: row;
     background-color: #252525;
-    top: 95px;
+    justify-content: flex-end;
     height: 30px;
     align-items: center;
-    justify-content: flex-end;
     color: white;
     font-size: 14px;
     font-weight: 400;
     gap: 6.95px;
-    padding-right: 298px;
 }
 
 .Logo {
     display: flex;
     position: absolute;
     z-index: 1;
-    padding-left: 13%;
+    justify-content: flex-start;
 }
 
 .Header {
