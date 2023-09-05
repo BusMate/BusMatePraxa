@@ -268,5 +268,45 @@ li a {
 }
 
 .handwerk{
-    background-color: #252525;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.handwerkszoveg{
+    color: white;
+    text-align: center;
+}
+
+.handwernagyszoveg{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.handwerkkiszoveg{
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 16px;
+}
+
+.handweralszoveg{
+    width: 652px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.handwerk button{
+    border: 1.5px solid white;
+    background-color: #B50014;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    border-radius: 25px;
+    width: 174px;
+    margin-right: 16px;
 }
