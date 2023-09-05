@@ -267,7 +267,7 @@ li a {
     object-fit: cover;
 }
 
-.handwerk{
+.handwerk {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -275,29 +275,29 @@ li a {
     align-items: center;
 }
 
-.handwerkszoveg{
+.handwerkszoveg {
     color: white;
     text-align: center;
 }
 
-.handwernagyszoveg{
+.handwernagyszoveg {
     font-size: 32px;
     font-weight: 700;
 }
 
-.handwerkkiszoveg{
+.handwerkkiszoveg {
     font-size: 22px;
     font-weight: 700;
     padding-top: 16px;
 }
 
-.handweralszoveg{
+.handweralszoveg {
     width: 652px;
     font-size: 16px;
     font-weight: 300;
 }
 
-.handwerk button{
+.handwerk button {
     border: 1.5px solid white;
     background-color: #B50014;
     padding: 15px 32px;
@@ -312,9 +312,17 @@ li a {
     margin-top: 50px;
 }
 
-hr{
-    width: 1098px;
-    color: white;
+.vonal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+hr {
+    width: 500px;
+    border-width: 0px;
     height: 1px;
-    border-style: none;
+    background-color: #ffffff3b;
 }
