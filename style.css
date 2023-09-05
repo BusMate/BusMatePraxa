@@ -309,4 +309,12 @@ li a {
     border-radius: 25px;
     width: 174px;
     margin-right: 16px;
+    margin-top: 50px;
+}
+
+hr{
+    width: 1098px;
+    color: white;
+    height: 1px;
+    border-style: none;
 }
