@@ -152,11 +152,6 @@ li a {
     flex-direction: column;
 }
 
-.Drycim {
-    font-size: 32px;
-    font-weight: 700;
-}
-
 .Dryalcim {
     font-size: 22px;
     font-weight: 700;
@@ -168,18 +163,9 @@ li a {
     width: 412px;
 }
 
-.aged {
-    border: 1.5px solid white;
-    background-color: #B50014;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    color: white;
-    border-radius: 25px;
-    width: 174px;
-    margin-right: 16px;
+.buttons {
+    display: flex;
+    gap: 16px;
 }
 
 .alte {
@@ -238,12 +224,7 @@ li a {
     font-weight: 700;
 }
 
-.buchenalszoveg {
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.buchenalszoveg li {
+.alszoveg li {
     list-style: none;
 
 }
@@ -273,6 +254,7 @@ li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 65px;
 }
 
 .handwerkszoveg {
@@ -280,36 +262,11 @@ li a {
     text-align: center;
 }
 
-.handwernagyszoveg {
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.handwerkkiszoveg {
-    font-size: 22px;
-    font-weight: 700;
-    padding-top: 16px;
-}
-
 .handweralszoveg {
     width: 652px;
     font-size: 16px;
     font-weight: 300;
-}
-
-.handwerk button {
-    border: 1.5px solid white;
-    background-color: #B50014;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    color: white;
-    border-radius: 25px;
-    width: 174px;
-    margin-right: 16px;
-    margin-top: 50px;
+    padding-bottom: 45px;
 }
 
 .vonal {
@@ -325,4 +282,19 @@ hr {
     border-width: 0px;
     height: 1px;
     background-color: #ffffff3b;
+}
+
+.handwerkepek {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.handwerkepek:hover {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    transform: scale(1.5);
 }
