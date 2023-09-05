@@ -179,7 +179,14 @@ li a {
     color: white;
     width: 174px;
     border-radius: 25px;
+    cursor: pointer;
+}
 
+.alte:hover{
+    border: 1.5px solid rgb(255, 255, 255);
+    background-color: #252525;
+    color: white;
+    transition: 500ms;
 }
 
 .grid {
@@ -226,7 +233,6 @@ li a {
 
 .alszoveg li {
     list-style: none;
-
 }
 
 .grillbutton {
@@ -240,6 +246,13 @@ li a {
     color: black;
     border-radius: 25px;
     width: 174px;
+}
+
+.grillbutton:hover{
+    border: 1.5px solid rgb(255, 255, 255);
+    background-color: #252525;
+    color: white;
+    transition: 500ms;
 }
 
 .buchenkep img {
@@ -258,8 +271,12 @@ li a {
 }
 
 .handwerkszoveg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     text-align: center;
+    padding-top: 119px;
 }
 
 .handweralszoveg {
@@ -288,13 +305,5 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    transition: transform .2s;
-    margin: 0 auto;
-}
-
-.handwerkepek:hover {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    transform: scale(1.5);
+    padding-bottom: 227px;
 }
