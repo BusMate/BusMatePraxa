@@ -402,23 +402,25 @@ hr {
     font-weight: 700;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     background-color: #B50014;
-    padding: 8px;
-    justify-content: center;
+    padding: 58px;
+    justify-content: space-between;
     align-items: center;
-    gap: 230px;
     color: white;
+    padding-left: 298px;
+    padding-right: 299px;
+    position: relative;
 }
 
-.footerlist li{
+.footerlist li {
     list-style: none;
     padding: 4px;
 }
 
-.footermedia{
+.footermedia {
     font-size: 16px;
     font-weight: 400;
     display: flex;
@@ -428,9 +430,59 @@ hr {
     gap: 10px;
 }
 
+.footerkep{
+    position: absolute;
+    right: 45%;
+}
+
 .local-link1::before {
-    content: url('');
+    content: url('images/location-dot-solid.svg');
     display: inline-block;
     width: fit-content;
     height: auto;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    transform: translate(-50%, 0px);
+}
+
+.local-link3::before {
+    content: url('images/phone-solid.svg');
+    display: inline-block;
+    width: fit-content;
+    height: auto;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    transform: translate(-50%, 0px);
+}
+
+.local-link4::before {
+    content: url('images/envelope-regular.svg');
+    display: inline-block;
+    width: fit-content;
+    height: auto;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    transform: translate(-50%, 0px);
+}
+
+.alfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #66000B;
+    color: rgba(255, 255, 255, 0.604);
+    padding: 7px;
+    padding-left: 299px;
+    padding-right: 298px;
+
+}
+
+span{
+    font-style: italic;
+    text-decoration: underline;
+    color: white;
 }
