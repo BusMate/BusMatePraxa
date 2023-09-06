@@ -157,6 +157,17 @@ li a {
     font-weight: 700;
 }
 
+.drykepek{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.drykiskepek{
+    display: flex;
+    gap: 8px;
+}
+
 .Hosszuszoveg {
     font-size: 16px;
     font-weight: 300;
@@ -189,33 +200,12 @@ li a {
     transition: 500ms;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    align-items: start;
-    justify-items: center;
-    width: 540px;
-    padding-top: 114px;
-}
-
-.grid img {
-    max-width: 100%;
-}
-
-.grid img:nth-child(1) {
-    grid-column: span 3;
-    grid-row: span 1;
-}
-
 .Buchen {
     background-color: #B50014;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 311px;
-    padding-left: 50px;
 }
 
 .buchentext {
@@ -224,6 +214,7 @@ li a {
     gap: 49px;
     width: 231px;
     justify-content: center;
+    padding: 200px;
 }
 
 .buchenszoveg {
@@ -314,18 +305,20 @@ hr {
     color: white;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-start;
    
 }
 
 .spicekep img{
-    width: 100%;
     height: 100%;
-    object-fit: cover; 
+    width: auto;
+    object-fit: cover;
 }
 
 .spicetext{
     display: flex;
-    flex-direction: column ;
-    width: 601px;
+    flex-direction: column;
+    width: 432px;
+    justify-content: center;
+    padding: 200px;
 }
