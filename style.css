@@ -157,13 +157,13 @@ li a {
     font-weight: 700;
 }
 
-.drykepek{
+.drykepek {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.drykiskepek{
+.drykiskepek {
     display: flex;
     gap: 8px;
 }
@@ -193,7 +193,7 @@ li a {
     cursor: pointer;
 }
 
-.alte:hover{
+.alte:hover {
     border: 1.5px solid rgb(255, 255, 255);
     background-color: #252525;
     color: white;
@@ -240,7 +240,7 @@ li a {
     width: 174px;
 }
 
-.grillbutton:hover{
+.grillbutton:hover {
     border: 1.5px solid rgb(255, 255, 255);
     background-color: #252525;
     color: white;
@@ -300,25 +300,48 @@ hr {
     padding-bottom: 227px;
 }
 
-.spices{
+.spices {
     background-color: #B50014;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-   
+
 }
 
-.spicekep img{
+.spicekep img {
     height: 100%;
     width: auto;
     object-fit: cover;
 }
 
-.spicetext{
+.spicetext {
     display: flex;
     flex-direction: column;
     width: 432px;
     justify-content: center;
     padding: 200px;
+}
+
+.steak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.steaktext {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    color: white;
+}
+
+.steakkep img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
 }
