@@ -143,6 +143,7 @@ a:hover {
     align-items: flex-end;
     justify-content: center;
     gap: 125px;
+    padding: 114px 0px 90px;
 }
 
 .Dryszoveg {
@@ -180,8 +181,6 @@ a:hover {
     background-color: #B50014;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-weight: 400;
     font-size: 16px;
     color: white;
@@ -203,19 +202,17 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 105px;
+    gap: 284px;
 }
 
 .buchentext {
     display: flex;
     flex-direction: column;
-    gap: 49px;
     justify-content: center;
-    padding: 200px;
     color: white;
 }
 
-.alszoveg li {
+.Body li {
     list-style: none;
 }
 
@@ -254,6 +251,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 65px;
+    padding: 119px 0px 227px;
 }
 
 .handwerkszoveg {
@@ -262,7 +260,6 @@ a:hover {
     align-items: center;
     color: white;
     text-align: center;
-    padding-top: 119px;
 }
 
 .vonal {
@@ -286,7 +283,6 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    padding-bottom: 227px;
 }
 
 .spices {
@@ -294,11 +290,10 @@ hr {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-
 }
 
 .spicekep img {
+    display: flex;
     height: 100%;
     width: auto;
     object-fit: cover;
