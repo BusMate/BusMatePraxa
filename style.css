@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
     z-index: 2;
     position: absolute;
     padding-left: 300px;
-    max-width: 10%;
+    width: 10%;
     height: auto;
 }
 
@@ -68,7 +68,6 @@ body::-webkit-scrollbar {
     font-size: 16px;
     font-weight: 700;
     font-family: 'Roboto';
-
     gap: 41px;
     list-style: none;
     padding-right: 298px;
@@ -200,7 +199,7 @@ a:hover {
     border: 1.5px solid rgb(255, 255, 255);
     background-color: #252525;
     color: white;
-    transition: 500ms;
+    transition: 55ms;
 }
 
 .Buchen {
@@ -233,17 +232,17 @@ a:hover {
     border-radius: 25px;
     width: 174px;
     cursor: pointer;
-
 }
 
 .grillbutton:hover {
     border: 1.5px solid rgb(255, 255, 255);
     background-color: #252525;
     color: white;
-    transition: 500ms;
+    transition: 55ms;
 }
 
 .buchenkep img {
+    display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -324,6 +323,7 @@ hr {
 }
 
 .steaktext {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -332,6 +332,8 @@ hr {
 }
 
 .steakkep img {
+    z-index: 1;
+    position: relative;
     width: 100%;
     height: auto;
     object-fit: fill;
@@ -457,30 +459,123 @@ span {
     color: white;
 }
 
-@media only screen and (max-width: 1910px) {
-    .Logo {
-        z-index: 2;
-        position: absolute;
-        padding-left: 200px;
-        
-    }
-
-    .headerlist {
+@media only screen and (max-width: 1628px) {
+    .DryAged {
         display: flex;
+        flex-direction: column-reverse;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .drykepek {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        height: auto;
+    }
+
+    .Dryszoveg{
+        display: flex;
+        width:347px ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alte {
+        border: 1.5px solid white;
+        background-color: #B50014;
+        font-family: 'Roboto', sans-serif;
+        padding: 15px 32px;
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+        width: 222px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .Buchen {
+        background-color: #B50014;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 84px;
+        padding-top: 75px;
+    }
+ 
+    .handwerkepek {
+        display: flex;
+        flex: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
         flex-direction: row;
-        font-size: 15px;
-        font-weight: 700;
-        gap: 22px;
-        list-style: none;
-        padding-right: 298px;
+        gap: 10px;
+        height: auto;
     }
 
-    .Headtext {
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.408);
+    .handwerkszoveg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center  ;
+        color: white;
+        text-align: center;
+        width: 367px;
+    }
+
+    .spices {
+        background-color: #B50014;
+        color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 59px;
+    }
+
+    .spicetext{
         padding: 65px;
-        padding-left: 300px;
-        width: min-content;
     }
 
+    .steaktext{
+        padding: 50px;
+    }
+
+    .H1 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    .H2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .Body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        width: auto;
+    }
+
+    .fontfamily1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        width: auto;
+    }
+
+    .fontfamily2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+    }
 }
