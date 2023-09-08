@@ -478,9 +478,9 @@ span {
         height: auto;
     }
 
-    .Dryszoveg{
+    .Dryszoveg {
         display: flex;
-        width:347px ;
+        width: 347px;
         justify-content: center;
         align-items: center;
     }
@@ -508,7 +508,7 @@ span {
         gap: 84px;
         padding-top: 75px;
     }
- 
+
     .handwerkepek {
         display: flex;
         flex: 50%;
@@ -523,7 +523,7 @@ span {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center  ;
+        justify-content: center;
         color: white;
         text-align: center;
         width: 367px;
@@ -539,11 +539,11 @@ span {
         gap: 59px;
     }
 
-    .spicetext{
+    .spicetext {
         padding: 65px;
     }
 
-    
+
 
     .H1 {
         font-family: 'Roboto Condensed', sans-serif;
