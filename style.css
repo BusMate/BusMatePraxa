@@ -397,32 +397,22 @@ hr {
     flex-direction: row;
     background-color: #B50014;
     padding: 58px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: white;
-    padding-left: 298px;
-    padding-right: 299px;
-    position: relative;
 }
 
 .footerlist li {
     list-style: none;
-    padding: 4px;
+    padding: 6px;
 }
 
 .footermedia {
-    font-size: 16px;
-    font-weight: 400;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.footerkep {
-    position: absolute;
-    right: 45%;
 }
 
 .local-link1::before {
@@ -466,11 +456,8 @@ hr {
     background-color: #66000B;
     color: rgba(255, 255, 255, 0.604);
     padding: 7px;
-    padding-left: 299px;
-    padding-right: 298px;
 
 }
-
 span {
     font-style: italic;
     text-decoration: underline;
