@@ -49,9 +49,6 @@ body::-webkit-scrollbar {
     flex-direction: row;
     position: relative;
     background-color: #B50014;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: 700;
     align-items: center;
     justify-content: flex-end;
     height: 93px;
@@ -61,6 +58,8 @@ body::-webkit-scrollbar {
     z-index: 2;
     position: absolute;
     padding-left: 300px;
+    max-width: 10%;
+    height: auto;
 }
 
 .headerlist {
@@ -68,6 +67,8 @@ body::-webkit-scrollbar {
     flex-direction: row;
     font-size: 16px;
     font-weight: 700;
+    font-family: 'Roboto';
+
     gap: 41px;
     list-style: none;
     padding-right: 298px;
@@ -414,7 +415,6 @@ hr {
 .footermedia {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 10px;
 }
@@ -424,7 +424,6 @@ hr {
     flex-direction: column;
     margin-left: 30px;
     gap: 8px;
-    justify-content: center;
 }
 
 .footer li:nth-child(1) {
@@ -456,4 +455,32 @@ span {
     font-style: italic;
     text-decoration: underline;
     color: white;
+}
+
+@media only screen and (max-width: 1910px) {
+    .Logo {
+        z-index: 2;
+        position: absolute;
+        padding-left: 200px;
+        
+    }
+
+    .headerlist {
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        font-weight: 700;
+        gap: 22px;
+        list-style: none;
+        padding-right: 298px;
+    }
+
+    .Headtext {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.408);
+        padding: 65px;
+        padding-left: 300px;
+        width: min-content;
+    }
+
 }
