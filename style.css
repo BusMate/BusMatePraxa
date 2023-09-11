@@ -3,11 +3,13 @@
     margin: 0;
 }
 
-body{
+body {
     background-image: url(/images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: 50%;
     background-color: rgba(0, 0, 0, 0.789);
+    background-size: cover;
 }
 
 body::-webkit-scrollbar {
@@ -154,9 +156,9 @@ a:hover {
     flex-direction: row;
     background-color: black;
     align-items: flex-end;
-    justify-content: center;
-    gap: 125px;
-    padding: 114px 0px 90px;
+    justify-content: space-between;
+    padding: 114px 435px 90px;
+    gap: 128;
 }
 
 .Dryszoveg {
@@ -218,8 +220,8 @@ a:hover {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    gap: 284px;
+    justify-content: space-between;
+    padding-left: 435px;
 }
 
 .buchentext {
@@ -414,19 +416,17 @@ hr {
     display: flex;
     flex-direction: row;
     background-color: #B50014;
-    padding: 58px;
-    justify-content: center;
+    padding: 58px 300px 58px 300px;
+    justify-content: space-between;
     align-items: center;
     color: white;
-    gap: 346px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 16px;
     font-weight: 400;
-
 }
 
 .footerkep {
-    padding-right: 200px;
+    padding-left: 140px;
 }
 
 .footermedia {
@@ -462,8 +462,8 @@ hr {
     align-items: center;
     background-color: #66000B;
     color: rgba(255, 255, 255, 0.604);
-    padding: 7px;
-    font-family: Roboto;
+    padding: 0px 300px 0px 300px;
+    font-family: 'Roboto';
     font-size: 12px;
     font-weight: 400;
 }
@@ -472,17 +472,40 @@ span {
     font-style: italic;
     text-decoration: underline;
     color: white;
+    cursor: pointer;
 }
 
 /*mobile*/
 
 @media only screen and (max-width:1910px) {
 
-    .goldenkepek{
+    .goldenkepek {
         gap: 50px;
         padding-top: 70px;
     }
 
+}
+
+@media only screen and (max-width: 1495px ) {
+    .footer{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        gap: 71px;
+     }
+
+     .footerkep{
+         padding: 0px;
+     }
+ 
+     .footermedia {
+         display: flex;
+         flex-direction: column;
+         gap: 25px;
+     }
 }
 
 @media only screen and (max-width: 628px) {
@@ -494,6 +517,7 @@ span {
         justify-content: center;
         text-align: center;
         gap: 15px;
+        padding: 0px 0px 60px;
     }
 
     .Dryszoveg {
@@ -525,6 +549,7 @@ span {
         text-align: center;
         gap: 84px;
         padding-top: 75px;
+        padding-left: 0px;
     }
 
     .handwerkszoveg {
@@ -556,6 +581,8 @@ span {
         display: flex;
         flex-direction: column;
         text-align: center;
+        gap: 120px;
+        padding: 55px 0px 55px 0px;
     }
 
     .goldenaward {
@@ -563,4 +590,10 @@ span {
         flex-direction: column;
     }
 
+    .alfooter{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px 30px 0px;
+        gap: 30px;
+    }
 }
