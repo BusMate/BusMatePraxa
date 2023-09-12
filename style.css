@@ -121,7 +121,6 @@ a:hover {
     font-weight: 400;
     justify-content: flex-end;
     padding-right: 298px;
-
 }
 
 .opentag {
@@ -475,39 +474,51 @@ span {
     cursor: pointer;
 }
 
-/*mobile*/
 
-@media only screen and (max-width:1910px) {
+@media only screen and (max-width: 1900px) {  
+    .headerlist {
+        font-size: 15px;
+    }
+
+    .DryAged{
+        padding: 114px 227px 90px;
+    }
+    
+    .Buchen{
+        padding-left: 227px;
+    }
 
     .goldenkepek {
         gap: 50px;
         padding-top: 70px;
     }
 
+    .Navbar{
+        padding-right: 149px;
+    }
+
+    .fekete{
+        padding-right: 149px;
+    }
+
+    .Logo{
+        padding-left: 150px;
+    }
+
+    .Headtext{
+        padding-left: 150px;
+    }
+
+    .footer{
+        padding: 58px 149px 58px 149px;
+    }
+
+    .alfooter{
+        padding: 0px 149px 0px 149px;
+    }
 }
 
-@media only screen and (max-width: 1495px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 50px;
-        gap: 71px;
-    }
-
-    .footerkep {
-        padding: 0px;
-    }
-
-    .footermedia {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-}
-
+/*mobile*/
 @media only screen and (max-width: 628px) {
     .DryAged {
         display: flex;
@@ -588,6 +599,26 @@ span {
     .goldenaward {
         display: flex;
         flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        gap: 71px;
+    }
+
+    .footerkep {
+        padding: 0px;
+    }
+
+    .footermedia {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
     }
 
     .alfooter {
