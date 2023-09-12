@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.menu-wrap {
+    display: none;
+}
+
 body {
     background-image: url(/images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png);
     background-repeat: no-repeat;
@@ -53,50 +57,60 @@ body::-webkit-scrollbar {
     flex-direction: column;
 }
 
-.Navbar {
+nav {
+    padding: 40px;
+    background: #B50014;
+    color: white;
+    font-family: 'Roboto';
     display: flex;
-    flex-direction: row;
-    position: relative;
-    background-color: #B50014;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: flex-end;
-    height: 93px;
-    padding-right: 298px;
+    justify-content: flex-start;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
 }
 
-.Logo {
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    padding-right: 245px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .mainMenu li a {
+    font-family: 'Roboto';
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+    transition: 0.2s ease;
+}
+
+nav .mainMenu li a:hover {
+    color: rgb(84, 84, 84);
+}
+
+nav .openMenu {
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.logo {
     z-index: 2;
     position: absolute;
     padding-left: 300px;
-    width: 10%;
-    height: auto;
-}
-
-.headerlist {
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Roboto';
-    gap: 41px;
-    list-style: none;
-}
-
-li a {
-    display: flex;
-}
-
-a {
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
-}
-
-a:hover {
-    text-decoration: none;
-    background-color: transparent;
-    color: rgb(215, 215, 215);
-    transition: 400ms;
 }
 
 .local-link::before {
@@ -105,9 +119,6 @@ a:hover {
     width: 15px;
     height: 15px;
     margin-right: 10px;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -6px);
 }
 
 .fekete {
@@ -154,10 +165,9 @@ a:hover {
     display: flex;
     flex-direction: row;
     background-color: black;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 114px 435px 90px;
-    gap: 128;
+    justify-content: center;
+    padding: 114px 0px 90px;
+    gap: 125px;
 }
 
 .Dryszoveg {
@@ -177,17 +187,17 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: fit-content;
-    height: auto;
 }
 
-.drykiskepek {
-    display: flex;
-    gap: 8px;
-    width: auto;
+.drynagykep{
     height: auto;
+    width: 100%;
 }
 
+.drykiskepek img{
+    height: auto;
+    width: 32%;
+}
 
 .buttons {
     display: flex;
@@ -218,6 +228,7 @@ a:hover {
     background-color: #B50014;
     color: white;
     display: flex;
+    gap: 50px;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 435px;
@@ -228,6 +239,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     color: white;
+    margin: 15px 0px 15px 0px;
 }
 
 .Body li {
@@ -326,6 +338,7 @@ hr {
     flex-direction: column;
     width: 400px;
     justify-content: center;
+    margin-right: 50px;
 }
 
 .steak {
@@ -374,6 +387,7 @@ hr {
 }
 
 .goldenaward {
+    margin: 15px;
     gap: 20px;
     padding: 150px 0px 130px;
     display: flex;
@@ -422,6 +436,11 @@ hr {
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 400;
+}
+
+.footerlist li a {
+    text-decoration: none;
+    color: white;
 }
 
 .footerkep {
@@ -474,17 +493,22 @@ span {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1800px) {
 
-@media only screen and (max-width: 1900px) {  
-    .headerlist {
-        font-size: 15px;
+    .logo {
+        padding-left: 149px;
     }
 
-    .DryAged{
-        padding: 114px 227px 90px;
+    nav .mainMenu {
+        padding-right: 0px;
     }
-    
-    .Buchen{
+
+    .DryAged {
+        padding: 114px 0px 90px;
+        gap: 50px;
+    }
+
+    .Buchen {
         padding-left: 227px;
     }
 
@@ -493,33 +517,86 @@ span {
         padding-top: 70px;
     }
 
-    .Navbar{
+    .fekete {
         padding-right: 149px;
     }
 
-    .fekete{
-        padding-right: 149px;
-    }
-
-    .Logo{
+    .Headtext {
         padding-left: 150px;
     }
 
-    .Headtext{
-        padding-left: 150px;
-    }
-
-    .footer{
+    .footer {
         padding: 58px 149px 58px 149px;
     }
 
-    .alfooter{
+    .alfooter {
         padding: 0px 149px 0px 149px;
     }
 }
 
+@media only screen and (max-width:1400px) {
+    nav {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .Header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Headtext{
+        position: relative;
+        max-width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        width: auto;
+    }
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
 /*mobile*/
-@media only screen and (max-width: 628px) {
+@media only screen and (max-width: 800px) {
+
     .DryAged {
         display: flex;
         flex-direction: column-reverse;
