@@ -1,4 +1,12 @@
+let hid = document.getElementById("hid")
 function showIt() {
-    document.getElementById("hid").style.visibility = "visible";
+  hid.style.display = "block";
+  setTimeout("showIt()", 3000); // after 10 seconds
   }
-  setTimeout("showIt()", 4000); // after 3 seconds
+
+  function closeModel() {
+    hid.style.display = "none"
+  }
+
+showIt();
+  
