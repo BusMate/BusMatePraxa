@@ -35,10 +35,14 @@
 
         <nav>
             <div class="pdf">
+
+                <img class="moon" src="./images/moon.png" id="icon" alt="">
+
                 <p class="local-link">download</p>
+
             </div>
             <div class="openMenu"><i class="fa fa-bars"></i></div>
-            <img src="./images/moon.png" alt="">
+
             <ul class="mainMenu">
                 <li><a href="#">Die Metzgerei</a></li>
                 <li><a href="#">Dry Aged</a></li>
@@ -54,7 +58,9 @@
 
         </nav>
 
-        <script src="./app.js"></script>
+        <script src="./libraries/mode.js"></script>
+
+        <script src="./libraries/app.js"></script>
 
 
         <div class="fekete">
@@ -75,10 +81,14 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide"><img src="./images/image 14.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/jordan-whitt-5U8VIKVwrvU-unsplash.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/stijn-te-strake-UdhpcfImQ9Y-unsplash.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/zoe-schaeffer-usUWjvopags-unsplash.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./images/juliana-e-mariana-amorim-3v4auSKIOFs-unsplash.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/jordan-whitt-5U8VIKVwrvU-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="./images/stijn-te-strake-UdhpcfImQ9Y-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="./images/zoe-schaeffer-usUWjvopags-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="./images/juliana-e-mariana-amorim-3v4auSKIOFs-unsplash.jpg"
+                                alt=""></div>
 
                         ...
                     </div>
@@ -97,27 +107,7 @@
                 "></script>
                 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-                <script>
-                    const swiper = new Swiper('.swiper', {
-                        // Optional parameters
-                        slidesPerView: 1,
-                        spaceBetween: 30,
-                        loop: true,
-
-                        // If we need pagination
-                        pagination: {
-                            el: '.swiper-pagination',
-                        },
-
-                        // Navigation arrows
-                        navigation: {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
-                        },
-
-                        // And if we need scrollbar
-                    });
-                </script>
+                <script src="./libraries/swiper.js"></script>
             </div>
 
             <div class="Headtext">
