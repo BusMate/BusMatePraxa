@@ -57,6 +57,11 @@ body::-webkit-scrollbar {
     flex-direction: column;
 }
 
+.swiper {
+    width: 1920px;
+    height: 700px;
+  }
+
 nav {
     padding: 40px;
     background: #B50014;
@@ -74,7 +79,6 @@ nav {
 nav .mainMenu {
     display: flex;
     list-style: none;
-    padding-right: 245px;
     justify-content: center;
     align-items: center;
 }
@@ -107,17 +111,26 @@ nav .mainMenu .closeMenu,
     cursor: pointer;
 }
 
-.logo {
+.logo{
     z-index: 2;
     position: absolute;
     padding-left: 300px;
 }
 
+.local-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 245px;
+    height: fit-content;
+}
+
+
 .local-link::before {
     content: url('images/Vector1.svg');
-    display: inline-block;
-    width: 15px;
-    height: 15px;
+    display: inline;
+    width: 25px;
+    height: 26px;
     margin-right: 10px;
 }
 
@@ -126,6 +139,7 @@ nav .mainMenu .closeMenu,
     flex-direction: row;
     background-color: #252525;
     padding: 8px;
+    gap: 8px;
     color: white;
     font-family: 'Roboto';
     font-size: 14px;
@@ -147,13 +161,39 @@ nav .mainMenu .closeMenu,
     color: white;
 }
 
-.headkep img {
+.swiper-slide{
     display: flex;
+}
+
+.swiper-slide img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    color: white;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    z-index: 3;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    color: white;
 }
 
 .Headtext {
+    z-index: 2;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.408);
     padding: 65px;
@@ -189,12 +229,12 @@ nav .mainMenu .closeMenu,
     gap: 8px;
 }
 
-.drynagykep{
+.drynagykep {
     height: auto;
     width: 100%;
 }
 
-.drykiskepek img{
+.drykiskepek img {
     height: auto;
     width: 32%;
 }
@@ -364,10 +404,17 @@ hr {
     color: white;
     display: flex;
     flex-direction: row;
+    width: auto;
     justify-content: center;
     align-items: center;
     gap: 260px;
     padding: 200px;
+}
+
+.awardtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .golden {
@@ -499,6 +546,10 @@ span {
         padding-left: 149px;
     }
 
+    .local-link {
+        padding-right: 115px;
+    }
+
     nav .mainMenu {
         padding-right: 0px;
     }
@@ -534,18 +585,33 @@ span {
     }
 }
 
+@media only screen and (max-width:1500px) {
+    .logo {
+        padding-left: 50px;
+    }
+}
+
 @media only screen and (max-width:1400px) {
+
+    .local-link {
+        padding-right: 0px;
+    }
+
+    .fekete {
+        padding-right: 40px;
+    }
+
     nav {
         flex-direction: row;
         justify-content: flex-end;
     }
 
-    .Header{
+    .Header {
         display: flex;
         flex-direction: column;
     }
 
-    .Headtext{
+    .Headtext {
         position: relative;
         max-width: 100%;
         background-color: black;
@@ -553,7 +619,7 @@ span {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center; 
+        text-align: center;
         width: auto;
     }
 
@@ -592,10 +658,79 @@ span {
         display: inline-block;
         padding: 12px;
     }
+
+    .DryAged {
+        padding: 114px 37px 90px;
+        gap: 50px;
+    }
+
+    .award {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        gap: 71px;
+    }
+
+    .footerkep {
+        padding: 0px;
+    }
+
+    .footermedia {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .alfooter {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px 30px 0px;
+        gap: 30px;
+    }
+
+    .footer li:nth-child(1) {
+        list-style-image: none;
+        list-style: none;
+    }
+    
+    .footer ul li:nth-child(2) {
+        list-style-image: none;
+        list-style: none;
+    }
+    
+    .footer ul li:nth-child(3) {
+        list-style-image: none;
+        list-style: none;   
+    }
+
 }
 
 /*mobile*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
+
+    .logo{
+        width: 150px;
+    }
+
+    .fekete {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: right;
+    }
+
+    .fekete img {
+        display: none;
+    }
 
     .DryAged {
         display: flex;
@@ -663,6 +798,7 @@ span {
     .spicetext {
         padding: 15px;
         width: 368px;
+        margin: 0px;
     }
 
     .award {
@@ -678,30 +814,51 @@ span {
         flex-direction: column;
     }
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 50px;
-        gap: 71px;
+}
+
+@media only screen and (max-width:600px) {
+
+    .logo{
+        padding-left:  20px;
+    }
+  
+    .Headtext {
+        padding: 40px;
     }
 
-    .footerkep {
-        padding: 0px;
+    .buttons {
+        flex-direction: column;
     }
 
-    .footermedia {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+    .award img{
+        width: 205px;
     }
 
-    .alfooter {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 0px 30px 0px;
-        gap: 30px;
+    .fekete{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:347px){
+
+    .logo{
+        padding-left: 10px;
+        width: 140px;
+    }
+
+    nav{
+        padding-right: 10px;
+    }
+
+    .handwerkszoveg{
+        width: 200px;
+    }
+
+    .Dryszoveg{
+        width: 200px;
+    }
+
+    .spicetext{
+        width: 200px;
     }
 }
