@@ -34,7 +34,7 @@
 }
 
 body {
-    background-image: url(/images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png);
+    background-image: url(/./images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -243,7 +243,7 @@ nav {
     height: fit-content;
 
     &::before {
-        content: url('images/Vector1.svg');
+        content: url('./images/Vector1.svg');
         display: inline;
         width: 25px;
         height: 26px;
@@ -675,16 +675,16 @@ hr {
     }
 
     li:nth-child(1) {
-        list-style-image: url('images/gps_5063963.png');
+        list-style-image: url('./images/gps_5063963.png');
     }
 
     ul li {
         &:nth-child(2) {
-            list-style-image: url('images/old-phone_4504102.png');
+            list-style-image: url('./images/old-phone_4504102.png');
         }
 
         &:nth-child(3) {
-            list-style-image: url('images/email_2258541.png');
+            list-style-image: url('./images/email_2258541.png');
         }
     }
 }
