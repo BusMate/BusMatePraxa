@@ -21,6 +21,7 @@
     --tenth-color: rgb(255, 123, 0);
     --eleventh-color: white;
     --twelweth-color: black;
+    --thirteenth-color: lightgrey;
 }
 
 .light-theme {
@@ -49,16 +50,52 @@ body::-webkit-scrollbar {
     position: fixed;
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: 40%;
     z-index: 10;
     top: 0;
     left: 0;
 }
 
+input {
+    color: var(--secondary-color);
+    padding-left: 10px;
+    border-style: solid;
+    border-radius: 9px;
+    height: 30px;
+    border-width: 2.5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loginbutton {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.loginkepek{
+    filter: invert(1);
+}
+
 .popup-inner {
-    max-width: 300px;
-    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
     background: white;
+    min-width: 220px;
+    max-width: 320px;
+    min-height: 160px;
+    height: 620px;
     border-radius: 25px;
     padding: 15px;
     margin: auto;
@@ -66,27 +103,8 @@ body::-webkit-scrollbar {
     position: relative;
 }
 
-/*popup*/
-.popup-msg {
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    padding: 20px 20px 20PX 20px;
-}
-
-.next-step-btn {
-    margin: 20px auto 0;
-    background: var(--third-color);
-    padding: 10px 40px;
-    color: #fff;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.next-step-btn:hover{
-    background: grey;
+.popup-inner a {
+    color: var(--secondary-color);
 }
 
 .transparent-layer {
@@ -96,7 +114,6 @@ body::-webkit-scrollbar {
     background: #000000;
     opacity: 0.3;
     overflow: hidden;
-
 }
 
 /*fonts*/
@@ -117,6 +134,7 @@ h2 {
     font-size: 16px;
     font-weight: 300;
     width: auto;
+    text-decoration: none;
 }
 
 .fontfamily1 {
@@ -980,6 +998,10 @@ span {
 }
 
 @media only screen and (max-width:600px) {
+
+    .popup-inner{
+        min-width: 230px;
+    }
 
     .logo {
         padding-left: 20px;

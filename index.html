@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
@@ -34,11 +35,32 @@
         <div class="popup-box" id="hid">
             <div class="transparent-layer"></div>
             <div class="popup-inner">
+                <i class="fa-solid fa-xmark"></i>
 
-                <div class="popup-msg">I'm a popup. Please use me as you like and I'm more efficient than iframe popup.
+                <img src="images/logo.svg" width="45%" alt="">
+
+                <h1>Login</h1>
+
+                <div class="username">
+                    <input type="text" id="Name" name="Name" placeholder="Username">
+                    <input type="text" id="Name" name="Name" placeholder="Password">
                 </div>
 
-                <button class="next-step-btn" onclick="closeModel()">CLOSE</button>
+                <div class="loginbutton">
+                    <a class="Body" href="">Forgot Password?</a>
+                <button class="alte" onclick="closeModel()">Login</button>
+                </div>
+                
+                <p class="Body">Or</p>
+
+                <div class="loginkepek">
+                    <img src="./images/Group 613.png" alt="">
+                    <img src="./images/Group 616.png" alt="">
+                    <img src="./images/Group 627.png" alt="">
+                    <img src="./images/Group 610.png" alt="">
+                </div>
+
+
             </div>
             <script src="./libraries/popup.js"></script>
 
