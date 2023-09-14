@@ -31,6 +31,16 @@
     height: 0
 }
 
+.fa-angle-left:before {
+    content: "\f104";
+    color: white;
+}
+
+.fa-angle-right:before {
+    content: "\f105";
+    color: white;
+}
+
 .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
@@ -85,9 +95,11 @@
 .owl-carousel button.owl-dot {
     background: 0 0;
     color: inherit;
-    border: none;
+    border-color: white;
     padding: 0 !important;
-    font: inherit
+    font: inherit;
+    border-radius: 40px;
+    width: 50px;
 }
 
 .owl-carousel.owl-loading {
