@@ -649,6 +649,10 @@ body {
   margin-bottom: 30px;
 }
 
+.container{
+  padding-top: 25px;
+}
+
 .slider .owl-item.active.center .slider-card {
   transform: scale(1.15);
   opacity: 1;
