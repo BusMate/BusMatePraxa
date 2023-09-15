@@ -33,7 +33,7 @@
 }
 
 body {
-  background-image: url(/./images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png);
+  background-image: url(/images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -233,7 +233,7 @@ nav .mainMenu .closeMenu {
   height: fit-content;
 }
 .local-link::before {
-  content: url("./images/Vector1.svg");
+  content: url("images/Vector1.svg");
   display: inline;
   width: 25px;
   height: 26px;
@@ -607,60 +607,14 @@ hr {
 
 .java {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   background-color: var(--secondary-color);
 }
 
 .javatext {
   color: var(--primary-color);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Noto Sans HK", sans-serif;
-  background: #fff;
-}
-
-.slider {
-  margin-bottom: 30px;
-  position: relative;
-}
-.slider .owl-item.active.center .slider-card {
-  transform: scale(1.15);
-  opacity: 1;
-}
-
-.slider-card {
-  background: #fff;
-  padding: 0px 0px;
-  margin: 50px 15px 90px 15px;
-  border-radius: 5px;
-  box-shadow: 0 15px 45px -20px rgba(0, 0, 0, 0.73);
-  transform: scale(0.9);
-  opacity: 0.5;
-  transition: all 0.3s;
-}
-.slider-card .slider-card img {
-  border-radius: 5px 5px 0px 0px;
-}
-
-.owl-nav .owl-prev {
-  position: absolute;
-  top: calc(50% - 25px);
-  left: 0;
-  opacity: 0.7;
-  font-size: 30px !important;
-  z-index: 1;
-}
-.owl-nav .owl-next {
-  position: absolute;
-  top: calc(50% - 25px);
-  right: 0;
-  opacity: 0.7;
-  font-size: 30px !important;
-  z-index: 1;
 }
 
 .javaszoveg {
@@ -704,13 +658,13 @@ body {
   gap: 8px;
 }
 .footer li:nth-child(1) {
-  list-style-image: url("./images/gps_5063963.png");
+  list-style-image: url("images/gps_5063963.png");
 }
 .footer ul li:nth-child(2) {
-  list-style-image: url("./images/old-phone_4504102.png");
+  list-style-image: url("images/old-phone_4504102.png");
 }
 .footer ul li:nth-child(3) {
-  list-style-image: url("./images/email_2258541.png");
+  list-style-image: url("images/email_2258541.png");
 }
 
 .alfooter {
