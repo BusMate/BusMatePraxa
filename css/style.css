@@ -33,7 +33,7 @@
 }
 
 body {
-  background-image: url(/./images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png);
+  background-image: url(./images/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -639,10 +639,6 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
-}
-
-body {
-  background: #fff;
 }
 
 .slider {
