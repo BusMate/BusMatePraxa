@@ -40,6 +40,7 @@ body {
   background-color: var(--secondary-color);
   background-size: cover;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -101,6 +102,7 @@ input {
   top: 25%;
   position: relative;
 }
+
 .popup-inner a {
   color: var(--secondary-color);
 }
@@ -186,12 +188,14 @@ nav {
   font-weight: 700;
   font-size: 16px;
 }
+
 nav .mainMenu {
   display: flex;
   list-style: none;
   justify-content: center;
   align-items: center;
 }
+
 nav .mainMenu li a {
   font-family: "Roboto";
   display: inline-block;
@@ -200,14 +204,17 @@ nav .mainMenu li a {
   color: var(--primary-color);
   transition: 0.2s ease;
 }
+
 nav .mainMenu li a:hover {
   color: var(--fourth-color);
 }
+
 nav .openMenu {
   margin: 20px;
   display: none;
   cursor: pointer;
 }
+
 nav .mainMenu .closeMenu {
   font-size: 2rem;
   display: none;
@@ -232,6 +239,7 @@ nav .mainMenu .closeMenu {
   justify-content: center;
   height: fit-content;
 }
+
 .local-link::before {
   content: url("./images/Vector1.svg");
   display: inline;
@@ -276,6 +284,7 @@ nav .mainMenu .closeMenu {
 .swiper-slide {
   display: flex;
 }
+
 .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -313,6 +322,7 @@ nav .mainMenu .closeMenu {
   top: 95.2%;
   left: 45%;
 }
+
 .swiper-button-prev:after {
   font-family: swiper-icons;
   font-size: 23px;
@@ -408,6 +418,7 @@ nav .mainMenu .closeMenu {
   border-radius: 25px;
   cursor: pointer;
 }
+
 .alte:hover {
   border: 1.5px solid var(--primary-color);
   background-color: var(--sixth-color);
@@ -448,6 +459,7 @@ nav .mainMenu .closeMenu {
   width: 174px;
   cursor: pointer;
 }
+
 .grillbutton:hover {
   border: 1.5px solid var(--eleventh-color);
   background-color: var(--sixth-color);
@@ -624,17 +636,19 @@ hr {
 
 html {
   scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 body {
-  font-family: "Noto Sans HK", sans-serif;
   background: #fff;
 }
 
 .slider {
   margin-bottom: 30px;
-  position: relative;
 }
+
 .slider .owl-item.active.center .slider-card {
   transform: scale(1.15);
   opacity: 1;
@@ -650,25 +664,24 @@ body {
   opacity: 0.5;
   transition: all 0.3s;
 }
+
 .slider-card .slider-card img {
   border-radius: 5px 5px 0px 0px;
 }
 
 .owl-nav .owl-prev {
-  position: absolute;
   top: calc(50% - 25px);
-  left: 0;
+  left: 25;
   opacity: 0.7;
   font-size: 30px !important;
   z-index: 1;
 }
+
 .owl-nav .owl-next {
-  position: absolute;
   top: calc(50% - 25px);
   right: 0;
   opacity: 0.7;
   font-size: 30px !important;
-  z-index: 1;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
@@ -682,7 +695,7 @@ body {
   display: flex !important;
   flex-direction: column-reverse;
   gap: 15px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .macskakaparas {
@@ -705,7 +718,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: black;
+  background: var(--sixth-color);
   padding: 0px;
   margin: 50px 15px 90px 15px;
   height: 429px;
@@ -717,12 +730,13 @@ body {
 }
 
 .p-4 {
-  width: 400px;
-  padding: 10px !important;
+  width: 300px;
+  padding: 38px 0px 10px 0px!important;
 }
 
 .slider-card img {
   border-radius: 5px 5px 0px 0px;
+  padding-top: 15px;
 }
 
 .owl-nav .owl-prev {
@@ -778,12 +792,15 @@ body {
   margin-left: 30px;
   gap: 8px;
 }
+
 .footer li:nth-child(1) {
   list-style-image: url("./images/gps_5063963.png");
 }
+
 .footer ul li:nth-child(2) {
   list-style-image: url("./images/old-phone_4504102.png");
 }
+
 .footer ul li:nth-child(3) {
   list-style-image: url("./images/email_2258541.png");
 }
@@ -812,64 +829,82 @@ span {
   .swiper-button-next {
     right: 43%;
   }
+
   .swiper-button-prev {
     left: 43%;
   }
+
   .Buchen {
     padding-left: 250px;
   }
+
   .logo {
     padding-left: 149px;
   }
+
   .moon {
     padding-right: 115px;
   }
+
   nav .mainMenu {
     padding-right: 0px;
   }
+
   .DryAged {
     padding: 114px 0px 90px;
   }
+
   .goldenkepek {
     gap: 50px;
     padding-top: 70px;
   }
+
   .fekete {
     padding-right: 149px;
   }
+
   .Headtext {
     padding-left: 150px;
   }
+
   .footer {
     padding: 58px 149px 58px 149px;
   }
+
   .alfooter {
     padding: 0px 149px 0px 149px;
   }
 }
+
 @media only screen and (max-width: 1500px) {
   .logo {
     padding-left: 50px;
   }
 }
+
 @media only screen and (max-width: 1400px) {
   .moon {
     padding-right: 0px;
   }
+
   .fekete {
     padding-right: 40px;
   }
+
   .Buchen {
     padding-left: 250px;
   }
+
   nav {
     flex-direction: row;
     justify-content: flex-end;
   }
+
   .Header {
     display: flex;
     flex-direction: column;
   }
+
   .Headtext {
     position: relative;
     max-width: 100%;
@@ -881,6 +916,7 @@ span {
     text-align: center;
     width: auto;
   }
+
   nav .mainMenu {
     height: 100vh;
     position: fixed;
@@ -895,41 +931,51 @@ span {
     transition: top 1s ease 0s;
     display: none;
   }
+
   nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
     top: 20px;
     right: 20px;
   }
+
   nav .openMenu {
     display: block;
   }
+
   nav .mainMenu li a:hover {
     background: none;
     color: var(--tenth-color);
   }
+
   .icons i {
     display: inline-block;
     padding: 12px;
   }
+
   .DryAged {
     padding: 114px 37px 90px;
     gap: 50px;
   }
+
   .award {
     padding: 15px;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .swiper-button-next {
     right: 40%;
   }
+
   .swiper-button-prev {
     left: 40%;
   }
+
   .Buchen {
     padding-left: 50px;
   }
+
   .footer {
     display: flex;
     flex-direction: column;
@@ -939,48 +985,60 @@ span {
     padding: 50px;
     gap: 71px;
   }
+
   .footerkep {
     padding: 0px;
   }
+
   .footermedia {
     display: flex;
     flex-direction: column;
     gap: 25px;
   }
+
   .alfooter {
     display: flex;
     flex-direction: column;
     padding: 30px 0px 30px 0px;
     gap: 30px;
   }
+
   .footer li:nth-child(1) {
     list-style-image: none;
     list-style: none;
   }
-  .footer ul li:nth-child(2), .footer ul li:nth-child(3) {
+
+  .footer ul li:nth-child(2),
+  .footer ul li:nth-child(3) {
     list-style-image: none;
     list-style: none;
   }
 }
+
 /*mobile*/
 @media only screen and (max-width: 900px) {
+
   .swiper-pagination,
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
   }
+
   .logo {
     width: 150px;
   }
+
   .fekete {
     display: flex;
     flex-direction: column;
     align-items: end;
     text-align: right;
   }
+
   .fekete img {
     display: none;
   }
+
   .DryAged {
     display: flex;
     flex-direction: column-reverse;
@@ -991,12 +1049,14 @@ span {
     gap: 15px;
     padding: 0px 0px 60px;
   }
+
   .Dryszoveg {
     display: flex;
     width: 347px;
     justify-content: center;
     align-items: center;
   }
+
   .alte {
     border: 1.5px solid var(--primary-color);
     background-color: var(--third-color);
@@ -1009,6 +1069,7 @@ span {
     border-radius: 25px;
     cursor: pointer;
   }
+
   .Buchen {
     background-color: var(--third-color);
     color: var(--primary-color);
@@ -1020,6 +1081,7 @@ span {
     padding-top: 75px;
     padding-left: 0px;
   }
+
   .handwerkszoveg {
     display: flex;
     flex-direction: column;
@@ -1029,6 +1091,7 @@ span {
     text-align: center;
     width: 367px;
   }
+
   .spices {
     background-color: var(--third-color);
     color: var(--primary-color);
@@ -1038,11 +1101,13 @@ span {
     text-align: center;
     gap: 59px;
   }
+
   .spicetext {
     padding: 15px;
     width: 368px;
     margin: 0px;
   }
+
   .award {
     display: flex;
     flex-direction: column;
@@ -1050,39 +1115,49 @@ span {
     gap: 120px;
     padding: 55px 0px 55px 0px;
   }
+
   .goldenaward {
     display: flex;
     flex-direction: column;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .popup-inner {
     min-width: 230px;
   }
+
   .logo {
     padding-left: 20px;
   }
+
   .Headtext {
     padding: 40px;
   }
+
   .buttons {
     flex-direction: column;
   }
+
   .award img {
     width: 205px;
   }
+
   .fekete {
     font-size: 10px;
   }
 }
+
 @media only screen and (max-width: 380px) {
   .logo {
     padding-left: 10px;
     width: 140px;
   }
+
   nav {
     padding-right: 10px;
   }
+
   .handwerkszoveg,
   .Dryszoveg,
   .spicetext {
