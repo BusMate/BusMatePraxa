@@ -233,7 +233,7 @@ nav .mainMenu .closeMenu {
   height: fit-content;
 }
 .local-link::before {
-  content: url("images/Vector1.svg");
+  content: url("./images/Vector1.svg");
   display: inline;
   width: 25px;
   height: 26px;
@@ -694,6 +694,9 @@ span {
   .swiper-button-prev {
     left: 43%;
   }
+  .Buchen {
+    padding-left: 250px;
+  }
   .logo {
     padding-left: 149px;
   }
@@ -734,6 +737,9 @@ span {
   }
   .fekete {
     padding-right: 40px;
+  }
+  .Buchen {
+    padding-left: 250px;
   }
   nav {
     flex-direction: row;
