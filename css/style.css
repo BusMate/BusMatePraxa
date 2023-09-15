@@ -669,21 +669,6 @@ body {
   border-radius: 5px 5px 0px 0px;
 }
 
-.owl-nav .owl-prev {
-  top: calc(50% - 25px);
-  left: 25;
-  opacity: 0.7;
-  font-size: 30px !important;
-  z-index: 1;
-}
-
-.owl-nav .owl-next {
-  top: calc(50% - 25px);
-  right: 0;
-  opacity: 0.7;
-  font-size: 30px !important;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
 
 .slider {
@@ -1017,6 +1002,20 @@ span {
 
 /*mobile*/
 @media only screen and (max-width: 900px) {
+
+  .owl-nav .owl-prev {
+    top: calc(95% - 25px);
+    left: 30%;
+    opacity: 1;
+    font-size: 30px !important;
+  }
+  
+  .owl-nav .owl-next {
+    top: calc(95% - 25px);
+    right:30%;
+    opacity: 1;
+    font-size: 30px !important;
+  }
 
   .swiper-pagination,
   .swiper-button-next,
